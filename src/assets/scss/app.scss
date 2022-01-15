@@ -1,10 +1,2 @@
-$primary-color: #dc780b;
-html{
-  color: $primary-color;
-}
-.item{
-  color:red;
-  &__img{}
-  &__title{}
-}
-@import './components/header.scss'
+@import './components/header.scss';
+@import './components/main.scss';
