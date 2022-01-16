@@ -1,3 +1,33 @@
-header{
-    background:green;
+@import './vars.scss';
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__img{
+    padding: 23px 34px;
+}
+.menu__navigation{
+    box-sizing: border-box;
+    margin: auto 0;
+}
+.menu__navigation a{
+    margin-right: 80px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 64, 47, 1);
+}
+.menu__navigation button{
+    padding: 35px 55px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.menu__navigation:last-child{
+    
+   
 }
