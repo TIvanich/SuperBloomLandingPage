@@ -1,29 +1,64 @@
-@import './vars.scss';
+@import "./vars.scss";
 
-.menu{
-    display: flex;
-    justify-content: space-between;
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
-.menu__img{
-    padding: 23px 34px;
+.menu__img {
+  padding: 23px 34px;
 }
-.menu__navigation{
-    box-sizing: border-box;
-    margin: auto 0;
+.menu__navigation {
+  box-sizing: border-box;
+  margin: auto 0;
 }
-.menu__navigation a{
-    margin-right: 80px;
-    text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    color: rgba(0, 64, 47, 1);
+.menu__navigation a {
+  margin-right: 80px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 64, 47, 1);
+  transition: all 0.4s linear;
 }
-.menu__navigation button{
-    padding: 35px 55px;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
+.menu__button1 {
+  padding: 35px 55px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  border-left: 1px solid rgba(0, 64, 47, 0.2);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  transition: all 0.4s linear;
+}
+.menu__button1:hover {
+  transform: scale(1.05);
+}
+.menu__button2 {
+  padding: 37px 29px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(0, 64, 47, 1);
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  transition: all 0.4s linear;
+}
+.menu__button2:hover {
+  transform: scale(1.05);
+}
+.menu__navigation a:hover {
+    animation: pulsate 1s linear infinite;    
+}
+@keyframes pulsate {
+    50% {color:#fff;text-shadow:0 -0.5px;}
 }
