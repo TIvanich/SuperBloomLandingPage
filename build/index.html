@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/app.css">
   </head>
   <body>
@@ -85,6 +86,59 @@
           </div>
         </div>
       </div>
-    </main>
+      <div class="hero hero--white">
+        <div class="container">
+          <div class="hero__mind hero__mind--white"><img src="./assets/imgs/fatgirl.png" alt="fatgirl">
+            <div class="hero__text-mind hero__text-mind--white">
+              <h2>Educational Resources for Mind-Body Support</h2>
+              <p>Our content is created by wellness experts and community members who have gone through physical and mental health challenges of their own. Explore our Journal and join our workshops for guidance on movement, nutrition and mindfulness. Because emotional wellbeing is so much more than mental!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero hero--orange">
+        <div class="container">
+          <div class="testimotionals">
+            <h3>Testimonials</h3>
+            <div class="swiper"> 
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="hero__mind-item1" src="./assets/imgs/testimotionals1.png" alt="testimotionals1"></div>
+                <div class="swiper-slide"> <img class="hero__mind-item2" src="./assets/imgs/testimotionals2.png" alt="testimotionals2"></div>
+                <div class="swiper-slide"> <img class="hero__mind-item3" src="./assets/imgs/testimotionals3.png" alt="testimotionals3"></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero hero--brown">
+        <div class="container">
+          <div class="hero__superbloom">       <img src="./assets/imgs/last888.png" alt="last888">
+            <h2>“We believe in the power of mind-body solutions for emotional wellbeing. Our personalized, clinically-backed approach is built to empower our members.”</h2>
+            <p>Erin Berman</p>
+            <p>Founder</p>
+          </div>
+        </div>
+      </div>
+    </main><script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>
+  <script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters        
+    loop: true,
+    
+    // If we need pagination
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+    });
+  </script>
 </html>

@@ -245,6 +245,7 @@
 }
 .hero__mind--white{
   justify-content: center;
+  gap: 0px 83px;
 }
 .hero__text-mind--white h2{
   font-family: 'Roboto', sans-serif;
@@ -266,6 +267,7 @@
 }
 .hero.hero--white-after{
   background-color: #fff;
+
   .container{
     position: relative;
     &::after{
@@ -279,4 +281,47 @@
       background-image: url(../imgs/8888.svg);
     }
   }
+}
+.hero.hero--white:last-child{
+  .container{
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      left: calc(50% - 16px);
+      height: 31px;
+      width: 16px;
+      background-image: url(../imgs/paragraph.svg);
+    }
+  }
+}
+.testimotionals{
+  text-align: center;
+}
+.testimotionals h3{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  text-align: center;
+}
+.swiper {
+  width: 850px;
+  height: 361px;
+  margin-bottom: 10px;
+}
+.swiper-button-prev, .swiper-button-next{  
+  color: black;
+}
+.swiper-wrapper{
+  display: flex;
+}
+.swiper-slide{
+  width: 100px;
+}
+.hero--brown{
+  background-color: rgba(82, 40, 64, 1);
+}
+.hero__superbloom img{
+  margin-top: 110px;
 }
