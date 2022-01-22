@@ -37,6 +37,9 @@
       top: 50%;
       right: -2%;      
       background-image: url(../imgs/888.png);
+      @media (max-width: 1249.75px) {
+        display: none;
+      }
     }
   }
 }
@@ -57,6 +60,10 @@
   justify-content: flex-start;
   padding-top: 5%;
   padding-bottom: 5%;
+  @media (max-width: 1249.75px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .hero__section img{
   width: 57%;
@@ -122,9 +129,15 @@
 .hero__mission{
   display: flex;
   justify-content: flex-start;  
+  @media (max-width: 1249.75px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .hero__mission img{
   margin: 5% 3%;
+  width: 57%;
+  height: 57%;  
 }
 .hero__text-mission{
   margin-top: auto;
@@ -140,6 +153,11 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.57);
   margin-bottom: 33px;
+  @media (max-width: 1249.75px) {
+    padding-top: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .hero__text-mission p{
   font-family: 'Roboto', sans-serif;
@@ -169,6 +187,10 @@
 .hero__mind{
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1249.75px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .hero__mind img{
   margin-top: 5%;
@@ -219,7 +241,13 @@
   line-height: 65px;  
   color: #00402F;
   max-width: 901px;
-  margin: 5% auto; 
+  margin: 5% auto;
+  @media (max-width: 1249.75px) {
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 50px;
+    font-size: 39px;
+  }
 }
 .hero__believe img{
   display: block;
@@ -256,6 +284,13 @@
   line-height: 39px;
   color: rgba(0, 64, 47, 1);
   max-width: 368px;
+  margin: 5% auto;
+  @media (max-width: 1249.75px) {
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 50px;
+    margin-top: 5%;
+  }
 }
 .hero__text-mind--white p{
   font-family: 'Roboto', sans-serif;
@@ -280,6 +315,9 @@
       bottom: 0%;
       right: 0%;
       background-image: url(../imgs/8888.svg);
+      @media (max-width: 1249.75px) {
+        display: none;
+      }
     }
   }
 }
@@ -290,9 +328,12 @@
       content: "";
       position: absolute;
       left: calc(50% - 16px);
-      height: 31px;
-      width: 16px;
+      height: 50px;
+      width: 50px;
       background-image: url(../imgs/paragraph.svg);
+      @media (max-width: 1249.75px) {
+        display: none;
+      }
     }
   }
 }
@@ -311,6 +352,9 @@
   width: 850px;
   height: 361px;
   margin-bottom: 5%;
+  @media (max-width: 12450px) {
+    width: 100%;
+  }
 }
 .swiper-button-prev, .swiper-button-next{  
   color: black;
